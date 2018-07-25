@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I..\include -I..\..\..\..\..\..\INC\ST\STM32F10x\USB -I E:\Keil4\ARM\RV31\Inc -I E:\Keil4\ARM\CMSIS\Include -I E:\Keil4\ARM\Inc\ST\STM32F10x -DSTM32F10X_MD -o ".\Obj\spi.o" --omf_browse ".\Obj\spi.crf" --depend ".\Obj\spi.d" "..\driver\spi.c"

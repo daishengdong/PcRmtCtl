@@ -1,0 +1,1 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\include -I "D:\Keil_v4\ARM\INC" -I "D:\Keil_v4\ARM\INC\ST\STM32F10x" -DSTM32F10X_MD -o ".\Obj\remote.o" --omf_browse ".\Obj\remote.crf" --depend ".\Obj\remote.d" "..\driver\remote.c"

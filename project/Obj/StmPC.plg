@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Project:</h2>
+D:\开发资料\STM32核心板\KeyBoard\project\JoyStickMouse.uvproj
+Project File Date:  12/12/2017
+
+<h2>Output:</h2>
+Build target 'HT_JBK_PC'
+compiling main.c...
+..\source\main.c(116): warning:  #177-D: variable "delta_y" was declared but never referenced
+..\source\main.c:       u8 delta_y = 10;
+..\source\main.c:          ^
+..\source\main.c(117): warning:  #177-D: variable "delta_x" was declared but never referenced
+..\source\main.c:       u8 delta_x = 0;
+..\source\main.c:          ^
+..\source\main.c(118): warning:  #177-D: variable "sign" was declared but never referenced
+..\source\main.c:       u8 sign = 0;
+..\source\main.c:          ^
+..\source\main.c(134): warning:  #177-D: variable "delta_y" was declared but never referenced
+..\source\main.c:       u8 delta_y = 10;
+..\source\main.c:          ^
+..\source\main.c(135): warning:  #177-D: variable "delta_x" was declared but never referenced
+..\source\main.c:       u8 delta_x = 0;
+..\source\main.c:          ^
+..\source\main.c(136): warning:  #177-D: variable "sign" was declared but never referenced
+..\source\main.c:       u8 sign = 1;
+..\source\main.c:          ^
+..\source\main.c(154): warning:  #177-D: variable "delta_y" was declared but never referenced
+..\source\main.c:       u8 delta_y = 0;
+..\source\main.c:          ^
+..\source\main.c(155): warning:  #177-D: variable "delta_x" was declared but never referenced
+..\source\main.c:       u8 delta_x = 10;
+..\source\main.c:          ^
+..\source\main.c(156): warning:  #177-D: variable "sign" was declared but never referenced
+..\source\main.c:       u8 sign = 1;
+..\source\main.c:          ^
+..\source\main.c(161): warning:  #177-D: variable "delta_y" was declared but never referenced
+..\source\main.c:       u8 delta_y = 0;
+..\source\main.c:          ^
+..\source\main.c(162): warning:  #177-D: variable "delta_x" was declared but never referenced
+..\source\main.c:       u8 delta_x = 10;
+..\source\main.c:          ^
+..\source\main.c(163): warning:  #177-D: variable "sign" was declared but never referenced
+..\source\main.c:       u8 sign = 0;
+..\source\main.c:          ^
+..\source\main.c(177): warning:  #223-D: function "Remote_Init" declared implicitly
+..\source\main.c:       Remote_Init(); //红外接收初始化
+..\source\main.c:       ^
+..\source\main.c(200): warning:  #223-D: function "Remote_Scan" declared implicitly
+..\source\main.c:               key = Remote_Scan();
+..\source\main.c:                     ^
+..\source\main.c: ..\source\main.c: 14 warnings, 0 errors
+linking...
+.\Obj\StmPC.axf: Error: L6218E: Undefined symbol Remote_Init (referred from main.o).
+.\Obj\StmPC.axf: Error: L6218E: Undefined symbol Remote_Scan (referred from main.o).
+.\Obj\StmPC.axf: Error: L6218E: Undefined symbol TIM4_IRQHandler (referred from stm32f10x_vector.o).
+.\Obj\StmPC.axf: Finished: 0 information, 0 warning and 3 error messages.
+Target not created
+Clean started: Project: 'JoyStickMouse'
+   deleting intermediate output files for target 'HT_JBK_PC'
