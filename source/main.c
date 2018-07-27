@@ -223,6 +223,7 @@ int main(void)
 	tty_printf("this is 2.4G init\n");
 #endif
 
+#if 0
 	Stm32_Clock_Init();//系统时钟设置
 	RCC->APB2ENR |= 0x00000001; //开启afio时钟
 	// AFIO->MAPR = (0x00FFFFFF & AFIO->MAPR)|0x04000000;		  //关闭JTAG 
@@ -232,6 +233,7 @@ int main(void)
 	led_init();
 
 	// delay_ms(100);
+#endif
 
 	while (1) {
 		key = Remote_Scan();
@@ -293,7 +295,9 @@ int main(void)
 		} else {
 			DelayMs(100);
 			// 看板子到底有没有在正常工作
+#if 0
 			set_led();
+#endif
 		}
 	}
 		/*
